@@ -21,7 +21,7 @@
         <main>
             <article class="col-9 bg-light">
                 @yield('noidung')
-                @foreach($baivietmoi as $bvm)
+                <!-- @foreach($baivietmoi as $bvm)
             <div>
                 <h2> <a href="{{ route( 'chitiet.chitiet', ['id' => $bvm->id]) }}">{{ $bvm->Tieude }}</a>
                 </h2>
@@ -29,7 +29,7 @@
                 <p><small>Ngày đăng: {{ $bvm->Ngaydang }}</small></p>
                 <hr>
             </div>
-        @endforeach
+        @endforeach -->
             </article>
             <aside class="col-3 bg-info">
                 <p>Top bài viết được xem nhiều nhất</p>

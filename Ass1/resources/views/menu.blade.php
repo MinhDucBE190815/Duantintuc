@@ -57,7 +57,7 @@
       <a class="text-gray-500" href="{{ route('baivietmoi.baivietmoi') }}">
        Mới nhất
       </a>
-      <a class="text-gray-500" href="#">
+      <a class="text-gray-500" href="{{ route('topbaiviet') }}">
        Tin HOT
       </a>
       <a class="text-gray-500 flex items-center" href="#">

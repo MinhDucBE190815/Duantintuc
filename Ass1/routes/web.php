@@ -14,5 +14,11 @@ Route::get('/tintrongloai/{idLT}', [TinTucController::class, 'tintrongloai'])->n
 Route::get('/menu', [TinTucController::class, 'menu']);
 Route::get('/footer',[TinTucController::class, 'footer']);
 Route::get('/luotxem/{id}', [TinTucController::class, 'tangLuotXem']);
-Route::get('/topbaiviet', [TinTucController::class, 'topBaiViet'])->name = 'topbaiviet.topbaiviet';
+Route::get('/topbaiviet', [TinTucController::class, 'topBaiViet'])->name('topbaiviet');
 Route::get('/baivietmoi',[TinTucController::class, 'baivietmoi'])->name('baivietmoi.baivietmoi');
+Route::get('/admin', [TinTucController::class, 'admin'])->name('admin');
+Route::resource('tin', TinTucController::class);
+Route::get('/quanly', [TinTucController::class, 'quanly'])->name('quanly');
+Route::get('/themtin',[TinTucController::class, 'create']);
+Route::get('/suatin',[TinTucController::class, 'edit']);
+Route::get('/dashboard',[TinTucController::class, 'dashboard'])->name('dashboard');

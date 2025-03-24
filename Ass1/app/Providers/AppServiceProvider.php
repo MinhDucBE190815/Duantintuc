@@ -39,6 +39,7 @@ class AppServiceProvider extends ServiceProvider
 
         // Chia sẻ biến này cho tất cả các view
         View::share('baiVietTop', $baiVietTop);
+        
         $baivietmoi = DB::table('tin')->orderBy('Ngaydang', 'desc')->get();
         View::share('baivietmoi', $baivietmoi);
 
